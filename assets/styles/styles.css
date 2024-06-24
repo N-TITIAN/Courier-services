@@ -38,6 +38,7 @@ nav ul{
     gap: 1.5rem;
     list-style: none;
    font-weight: medium;
+   color: black;
 }
 nav ul .active{
     font-weight: bold;

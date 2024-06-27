@@ -11,6 +11,7 @@ body{
 }
 body a{
     text-decoration: none;
+    color: black;
 }
 body h1,h2,h3,h4,h5,h6,p{
     margin:0 ;
@@ -38,9 +39,9 @@ nav ul{
     gap: 1.5rem;
     list-style: none;
    font-weight: medium;
-   color: black;
+
 }
-nav ul .active{
+nav ul  .active{
     font-weight: bold;
     color: var(--primary-color);
 }
@@ -116,8 +117,427 @@ nav ul .active{
     flex-direction: row;
     gap: .5rem;
 }
-main{
+.primary-button{
+    border: none;
+   background-color: var(--primary-color);
+   color: white;
+   font-weight: bold;
+   padding: 1rem 0;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   width: 100%;
+  
+}
+.secondary-button{
+    border: none;
+   background-color: transparent;
+   color: var(--primary-color);
+   border: solid  var(--primary-color);
+   font-weight: bold;
+   padding: 1rem 0;
+   border-radius: 1rem;
+}
+.contact-us-button{
+     border: none;
+   background-color: var(--primary-color);
+   color: white;
+   font-weight: bold;
+   padding: 1rem 0;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   width: 60%;
+}
+.subcribe-button{
+ border: none;
+   background-color: var(--primary-color);
+   color: white;
+   font-weight: bold;
+  height: fit-content;
+  padding: 1rem;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+  
+
+}
+/* prices list section */
+.services-category{
+padding: 2rem 6rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  justify-content: space-between;
+
+}
+.section-head{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    font-size: 1.5rem;
+}
+.section-head .active{
+    color: var(--primary-color);
+}
+.category-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    
+}
+.category-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 4rem 2rem;
+}
+.category-card .body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-head{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.card-head .circle{
+    background-color: var(--secondary-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+  
+
+}
+.card-head i{
+    position: absolute;
+   font-size: 2rem;
+    color: var(--primary-color);
+    bottom: -1rem;
+}
+.category-items {
+    
+    text-align: left;
+}
+.category-items li::marker{
+color: var(--primary-color);
+}
+.statistics{
+    display: flex;
     padding: 2rem 6rem;
     align-items: center;
     text-align: center;
+  
+justify-content: space-between;
+  
+
+}
+.statistics-features{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    font-weight: bold;
+
+}
+.statistics-features h1{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.statistics-features i{
+    font-size: 4rem;
+
+}
+/* youtube video                 */
+.youtube{
+   padding: 2rem 6rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+
+    
+}
+iframe{
+   width: 100%;
+}
+/* testimonial section  */
+.testimonials{
+     /* padding: 2rem 6rem; */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   
+
+
+}
+.testimonial-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+.testimonial-top i{
+    font-size: 7rem;
+    color: var(--secondary-color);
+}
+.testimonial-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+99,000000+99&0+3,0+55,0.65+100 */
+/* background: radial-gradient(ellipse at center,  rgba(255,255,255,0) 0%,rgba(247,247,247,0) 3%,rgba(113,113,113,0) 55%,rgba(0,0,0,0.64) 99%,rgba(0,0,0,0.65) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+.testimonial-card{
+    width: calc(90%/3);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: left;
+
+}
+.testimonial-card p{
+    font-size: .8rem;
+}
+.testimonial-card h3{
+    color: var(--primary-color);
+
+}
+.testimonial-card i{
+    color: var(--primary-color);
+
+}
+.rating-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rating{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    gap: .5rem;
+}
+.profile-name{
+    font-weight: bold;
+}
+.profile-photo{
+    width: 2.5rem;
+    height: auto;
+}
+.profile-photo img{
+    width: 100%;
+}
+
+/* request call back  */
+.request-call-back{
+   padding: 2rem 6rem;
+    align-items: center;
+   justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+  
+}
+.request-left{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+.request-left img{
+    height: 50%;
+}
+.request-left h4{
+    color: var(--primary-color);
+}
+.request-right form{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+input{
+    border: solid #e9e5e5;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.active-input{
+    border-color: #F95C19;
+}
+textarea{
+   border: solid #e9e5e5;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+/* find us section  */
+.contact-information{
+      padding: 2rem 6rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   
+}
+.contact-us-body{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1rem;
+}
+.contact-us-body img{
+    width: 60%;
+}
+.contact-us-infos{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 2rem;
+    text-align: left;
+    
+}
+.contact-us-infos h3{
+    color: var(--primary-color);
+
+}
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.contact-us-infos i{
+    color: var(--primary-color);
+}
+/* footer  */
+footer{
+    background-color: #111111;
+     padding: 2rem 0rem;
+    
+  color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   
+
+}
+.footer-top{
+     background-color: #11111100;
+     display: flex;
+     flex-direction: row;
+   gap: 4rem;
+     padding: 0 6rem;
+     
+}
+.footer-top-text{
+    width: 30%;
+   
+}
+footer p{
+    font-size: .8rem;
+    margin-top: 1rem;
+
+}
+.subcribe{
+    width: 80%;
+}
+.subcribe h4{
+    color: var(--primary-color);
+
+}
+.input-subscribe{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    margin-top: 1rem;
+    
+}
+.input-subscribe p{
+    margin: 0;
+}
+
+.footer-middle{
+    display: flex;
+ gap: 04rem;
+    flex-direction: row;
+    align-items: center;
+  background-color: #282626;
+  padding: 1rem 6rem;
+  gap: 4rem;
+}
+.footer-middle-left{
+    width: 30%;
+    text-align: left;
+}
+.footer-middle-right{
+    display: flex; 
+   
+    justify-content: space-between;
+   width: 100%;
+}
+
+.quick-nav ul{
+    
+    list-style: none;
+   font-size: .8rem;
+    padding: 0;
+  
+}
+.quick-nav li{
+    margin-bottom: .5rem;
+}
+.rights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 6rem;
+}
+.rights p{
+    margin: 0;
+}
+.rights span{
+    color: var(--primary-color);
 }
